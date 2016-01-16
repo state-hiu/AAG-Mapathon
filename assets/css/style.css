@@ -84,7 +84,7 @@
 
 	a
 	{
-		color: #d52349;
+		color: #d73f3f;
 		text-decoration: underline;
 	}
 
@@ -315,7 +315,7 @@
 			cursor: pointer;
 			border: 0;
 			border-radius: 5px;
-			background: #d52349;
+			background: #d73f3f;
 			color: #fff !important;
 			font-weight: 700;
 			outline: 0;
@@ -486,7 +486,7 @@
 					position: absolute;
 					left: 0;
 					top: 1.3em;
-					background-color: #d52349;
+					background-color: #d73f3f;
 					height: 3.5em;
 					text-align: center;
 					color: #fff;
@@ -502,7 +502,7 @@
 						position: absolute;
 						bottom: 0;
 						right: -1.2em;
-						border-left: solid 1.25em #d52349;
+						border-left: solid 1.25em #d73f3f;
 						border-top: solid 1.8em transparent;
 						border-bottom: solid 1.8em transparent;
 					}
@@ -643,7 +643,7 @@
 		{
 			position: relative;
 			display: inline-block;
-			background-color: #d52349;
+			background-color: #ACBFBD;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -665,30 +665,31 @@
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #d52349;
+				border-top: solid 2em #ACBFBD;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
 
 			.icon.featured.alt
 			{
-				background-color: #252122;
+				background-color: #d73f3f;
 			}
 
 				.icon.featured.alt:after
 				{
-					border-top-color: #252122;
+					border-top-color: #d73f3f;
 				}
 
 			.icon.featured.alt2
 			{
-				background-color: #827a7c;
+				background-color: #9bcaff;
 			}
 
 				.icon.featured.alt2:after
 				{
-					border-top-color: #827a7c;
+					border-top-color: #9bcaff;
 				}
+
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -696,7 +697,7 @@
 
 	#banner
 	{
-		background: #CCE8F4 url('../images/pic01.jpg');
+		background: #CCE8F4 url('../images/goldengate.jpg');
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -717,7 +718,7 @@
 
 			#banner header p
 			{
-				color: #d52349;
+				color: #d73f3f;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
