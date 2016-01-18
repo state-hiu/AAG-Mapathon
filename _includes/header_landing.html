@@ -9,10 +9,10 @@
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="{{ site.baseurl }}/left-sidebar.html">About</a></li>
-								<li><a href="{{ site.baseurl }}/left-sidebar.html">Schedule</a></li>
+								<li><a href="{{ site.baseurl }}/index.html#summary-section" id="about-button">About</a></li>
+								<li><a href="{{ site.baseurl }}/schedule.html">Schedule</a></li>
 								<li>
-									<a href="">Mapping Projects</a>
+									<a href="{{ site.baseurl }}/index.html#projects">Mapping Projects</a>
 									<ul>
 										<!--<li><a href="{{ site.baseurl }}/blog">Blog</a></li>-->
 										<li><a href="{{ site.baseurl }}/meleke/">Meleke, Ethiopia</a></li>
@@ -31,7 +31,7 @@
 									</ul>
 								</li>
 								<li><a href="{{ site.baseurl }}/left-sidebar.html">Metrics</a></li>
-								<li><a href="{{ site.baseurl }}/right-sidebar.html">AAG Site</a></li>
+								<li><a href="http://www.aag.org/annualmeeting" target="_blank">AAG Conference Site</a></li>
 								<li><a href="{{ site.baseurl }}/no-sidebar.html"><img src="{{ site.baseurl }}/assets/images/TwitterLogo.png" width="52" style="top:20px;position:relative"></a></li>
 							</ul>
 						</nav>
@@ -77,12 +77,34 @@
 								</div>
 							</div>
 							<footer>
+								<div id="summary-section"></div>
 								<ul class="actions">
 									<li><a href="#projects" class="button big">Get Started Mapping</a></li>
-									<li><a href="#" class="button alt big">Learn More</a></li>
+									<li><a href="#summary-section" class="button alt big" id="summary-button">Learn More</a></li>
 								</ul>
 							</footer>
 						</section>
+
+						{% include summary.html %}
+
+						<div id="container">
+						</div>
+
+						<script type="text/javascript">
+							$( document ).ready(function() {
+							    console.log( "ready!" );
+							});
+
+							$("#summary-button").click(function () {
+								//$("#container").append($("#summary-text").html());
+								$("#summary-text").show('slow');
+							});
+
+							$("#about-button").click(function () {
+								//$("#container").append($("#summary-text").html());
+								$("#summary-text").show('slow');
+							});
+						</script>
 
 				</div>
 			</div>
