@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum Dolor Sit Amet
+title: Mozambique
 featured: /assets/images/pic02.jpg
 permalink: '/mozambique/'
 layout: project
