@@ -2,11 +2,20 @@
 title: Dopetrope
 layout: default
 ---
+
+<script>
+  $(function() {
+    $('table').accordion({header: 'h4.category', collapsible: true, active: false  });
+  });
+</script>
+
 	<body class="no-sidebar">
 
 		{% include nav.html %}
 
 		<!-- Main -->
+
+
 			<div id="main-wrapper">
 				<div class="container">
 
@@ -16,31 +25,31 @@ layout: default
 							<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic01.jpg" alt="" /></a>
 							<header>
 							-->
+							
+
 								<h2 id="wednesday">Wednesday, March 30th</h2>
 							</header>
 							<p>
 								<table border="0">
 									<tr>
 									    <td>10:00AM – 11:40AM</td>
-									    <td>Panel session: Mapping Secondary Cities for Resiliency and Emergency Preparedness </td>
+									    <td><h4 class="category">Panel session: Mapping Secondary Cities for Resiliency and Emergency Preparedness</h4><div>collapsible text</div></td>
 									 </tr>
 									 <tr>
 									    <td>11:40AM – 1:20PM</td>
-									    <td>Keynote and Mapping session
-Keynote:  Secondary City Project – Mapping One City at a Time</td>
+									    <td><h4 class="category">Keynote and Mapping session Keynote:  Secondary City Project – Mapping One City at a Time</h4><div>collapsible text</div></td>
 									 </tr>
 									 <tr>
 									    <td>1:20PM – 3:00PM</td>
-									    <td>Keynote and Mapping Session
-Keynote:  Secondary City Project – Mapping One City at a Time</td>
+									    <td><h4 class="category">Keynote and Mapping Session Keynote:  Secondary City Project – Mapping One City at a Time</h4><div>collapsible text</div></td>
 									 </tr>
 									 <tr>
 									    <td>3:20PM – 5:00PM</td>
-									    <td>Panel session: Case studies on Mapping Secondary Cities </td>
+									    <td><h4 class="category">Panel session: Case studies on Mapping Secondary Cities</h4><div>collapsible text</div></td>
 									 </tr>
 									 <tr>
 									    <td>5:20PM – 7:00PM</td>
-									    <td>Hosted reception “Mappy Hour” in Mapathon Lounge</td>
+									    <td><h4 class="category">Hosted reception “Mappy Hour” in Mapathon Lounge</h4><div>collapsible text</div></td>
 									 </tr>
 								 </table>
 							</p>
@@ -53,23 +62,23 @@ Keynote:  Secondary City Project – Mapping One City at a Time</td>
 									<table border="0">
 										<tr>
 										    <td>10:00AM – 11:40AM</td>
-										    <td>Paper session: Understanding OpenStreetMap: Current-, Historical-, and Meta-Data Analysis  </td>
+										    <td><h4 class="category">Paper session: Understanding OpenStreetMap: Current-, Historical-, and Meta-Data Analysis</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>11:40AM – 1:20PM</td>
-										    <td>Thematic Keynote and Mapping Session</td>
+										    <td><h4 class="category">Thematic Keynote and Mapping Session</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>1:20PM – 3:00PM</td>
-										    <td>Disrupt Geo: new ideas from the front lines of maps, mobile, and big data </td>
+										    <td><h4 class="category">Disrupt Geo: new ideas from the front lines of maps, mobile, and big data</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>3:20PM – 5:00PM</td>
-										    <td>Disrupt Geo: new ideas from the front lines of maps, mobile, and big data </td>
+										    <td><h4 class="category">Disrupt Geo: new ideas from the front lines of maps, mobile, and big data</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>5:20PM – 7:00PM</td>
-										    <td>Mappy Hour</td>
+										    <td><h4 class="category">Mappy Hour</h4><div>collapsible text</div></td>
 										 </tr>
 									 </table>
 							</section>
@@ -82,28 +91,55 @@ Keynote:  Secondary City Project – Mapping One City at a Time</td>
 									<table border="0">
 										<tr>
 										    <td>10:00AM – 11:40AM</td>
-										    <td>Paper session: Partnering to Grow the Humanitarian Mapping Crowd </td>
+										    <td><h4 class="category">Paper session: Partnering to Grow the Humanitarian Mapping Crowd</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>11:40AM – 1:20PM</td>
-										    <td>Thematic Keynote and Mapping Session</td>
+										    <td><h4 class="category">Thematic Keynote and Mapping Session</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>1:20PM – 3:00PM</td>
-										    <td>Open Mapping – The final count down!</td>
+										    <td><h4 class="category">Open Mapping – The final count down!</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>3:20PM – 4:30PM</td>
-										    <td>Panel session: Youth Mappers University Consortium </td>
+										    <td><h4 class="category">Panel session: Youth Mappers University Consortium</h4><div>collapsible text</div></td>
 										 </tr>
 										 <tr>
 										    <td>4:30PM – 5:30PM</td>
-										    <td>Opportunities and Challenges: The future of the Open Mapping Community </td>
+										    <td><h4 class="category">Opportunities and Challenges: The future of the Open Mapping Community</h4><div>collapsible text</div></td>
 										 </tr>
 									 </table>
 								</p>
 							</section>
+							</dl>
 						</article>
-
 				</div>
 			</div>
+
+<!--
+<script type="text/javascript">
+
+		$( document ).ready(function() {
+		    console.log( "ready!" );
+		});
+
+		$('.expandable').click(function(){
+		    if($(this).hasClass("collapsed")){
+		        $(this).nextUntil('td')
+		        $('.day1')
+		        .slideDown("fast", function(){
+		            var $set = $(this);
+		            $set.replaceWith($set.contents());
+		        });
+		        $(this).removeClass("collapsed");
+		    } else {
+		        $(this).nextUntil('td')
+		        $('.day1')
+		        .slideUp("fast");
+		        $(this).addClass("collapsed");
+		    }
+		});
+
+</script>
+-->
