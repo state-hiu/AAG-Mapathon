@@ -37,7 +37,7 @@
 										<li><a href="{{ site.baseurl }}/mozambique/">Mozambique</a></li>
 									</ul>
 								</li>
-								<li><a href="{{ site.baseurl }}/left-sidebar.html">Metrics</a></li>
+								<!--<li><a href="{{ site.baseurl }}/left-sidebar.html">Mapping Results</a></li>-->
 								<li><a href="http://www.aag.org/annualmeeting" target="_blank">AAG Conference Site</a></li>
 								<li><a href="{{ site.baseurl }}/no-sidebar.html"><img src="{{ site.baseurl }}/assets/images/TwitterLogo.png" width="52" style="top:20px;position:relative"></a></li>
 							</ul>
@@ -101,6 +101,17 @@
 							$( document ).ready(function() {
 							    console.log( "ready!" );
 							});
+
+							$(window).load(function(){
+							    // Remove the # from the hash, as different browsers may or may not include it
+							    var hash = location.hash.replace('#','');
+
+							    if(hash == 'summary-section'){
+
+							       $("#summary-text").show('slow');
+
+							       }
+							   });
 
 							$("#summary-button").click(function () {
 								//$("#container").append($("#summary-text").html());
