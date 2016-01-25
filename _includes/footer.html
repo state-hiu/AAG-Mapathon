@@ -8,6 +8,13 @@
 									<h2>Highlights</h2>
 								</header>
 								<ul class="dates">
+									<li>
+										<span class="date">each<strong>Day</strong></span>
+										<h3><a href="{{ site.baseurl }}{{ highlight.url }}">Keynote Lectures</a></h3>
+										Listen to the keynote lectures from Lee Schwartz, Geographer of the United States, Nama Budhathoki, Founder and Executive Director at Kathmandu Living Labs, and Carrie Stokes, Director and Founder of the United States Agency for International Development's GeoCenter.
+									</li>
+								</ul>
+								<ul class="dates">
 								{% assign sorted_pages = (site.categories.highlights | sort: 'date') %}
 								{% for highlight in sorted_pages offset: 0 limit: 5 %}
 									<li>
@@ -24,7 +31,7 @@
 								<header>
 									<h2>Featured Event: Disrupt Geo Lightning Talks</h2>
 								</header>
-								<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic10.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/lightning-earth.png" alt="" /></a>
 								<p>
 									In this special AAG session, we invite academics, industry professionals, non-academic researchers, and activists, basically anyone doing really interesting geo-things who wants to show them off.
 								</p>
