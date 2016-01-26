@@ -1,4 +1,4 @@
 name: AAG-Mapathon
 description: DopeTrope template for Jekyll
 paginate: 9
-baseurl: '/AAG-Mapathon'
+baseurl: 
