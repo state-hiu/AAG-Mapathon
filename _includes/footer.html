@@ -14,21 +14,24 @@
 										Listen to the keynote lectures from Lee Schwartz, Geographer of the United States, Nama Budhathoki, Founder and Executive Director at Kathmandu Living Labs, and Carrie Stokes, Director and Founder of the United States Agency for International Development's GeoCenter.
 									</li>
 								</ul>
+								{% assign sorted_pages = (site.categories.highlights | sort: 'date') %}
+								{% for highlight in sorted_pages offset: 0 limit: 5 %}
 								<ul class="dates">
-									{% assign sorted_pages = (site.categories.highlights ) %}
-                                {% for highlight in sorted_pages offset: 0 limit: 5 %}
-                                    <li>
-                                        <span class="date">{{ highlight.date | date: "%B"}} <strong>{{ highlight.date | date: "%d"}}</strong></span>
-                                        <h3><a href="{{ site.baseurl }}{{ highlight.url }}">{{ highlight.title }}</a></h3>
-                                        {{ highlight.excerpt }}
-                                    </li>
-                                {% endfor %}
+									<li>
+										<span class="date">{{ highlight.date | date: "%B"}} <strong>{{ highlight.date | date: "%d"}}</strong></span>
+										<h3><a href="{{ site.baseurl }}{{ highlight.url }}">{{ highlight.title }}</a></h3>
+										{{ highlight.excerpt }}
+									</li>
+								{% endfor %}
 								</ul>
 							</section>
 
 <div style="position:relative">
 <a href='http://mapgive.state.gov/' style="margin-right:40px;position:absolute" target="blank"><img src="{{ site.baseurl }}/assets/images/mapgive-logo.png" alt="" /></a>
 <a href='http://secondarycities.state.gov/' style="position:absolute;margin-left:440px;margin-top:15px"target="blank"><img src="{{ site.baseurl }}/assets/images/SecondaryCities-logo.png" alt="" /></a>
+</div>
+<div>
+<a href='https://hiu.state.gov/' style="position:absolute;margin-top:125px;width:150px"target="blank"><img src="{{ site.baseurl }}/assets/images/hiu_logo.png" alt="" style="width:200px"/></a>
 </div>
 						</div>
 						<div class="4u">

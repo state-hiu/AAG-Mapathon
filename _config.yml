@@ -1,4 +1,5 @@
 name: AAG-Mapathon
 description: DopeTrope template for Jekyll
-paginate: 9
+#paginate: 9
 baseurl: 
+future: True
