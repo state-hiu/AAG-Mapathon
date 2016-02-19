@@ -698,7 +698,7 @@
 	{
 		background: #9bcaff url('../images/goldengate.jpg');
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 	}
@@ -706,7 +706,7 @@
 		#banner header
 		{
 			background-color: #252122;
-			background-color: rgba(34,30,31,0.98);
+			background-color: rgba(34,30,31,0.7);
 		}
 
 			#banner header h2

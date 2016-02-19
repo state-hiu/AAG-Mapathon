@@ -7,9 +7,10 @@
 
 			<nav id="nav">
 							<ul>
-								<li class="current"><a href="{{ site.baseurl }}/index.html">Home</a></li>
-								<li><a href="{{ site.baseurl }}/index.html#summary-section" id="about-button">About</a></li>
-								<li>
+							    {% assign current = page.url | downcase | split: '/' %}
+								<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+								<li {% if current[1] == 'summary.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/summary.html" id="about-button">About</a></li>
+								<li {% if current[1] == 'schedule.html' %}class="current"{% endif %}>
 									<a href="{{ site.baseurl }}/schedule.html">Schedule</a>
 									<ul>
 										<li><a href="{{ site.baseurl }}/schedule.html#wednesday">Wednesday, March 30th</a></li>
@@ -21,7 +22,7 @@
 									<a href="{{ site.baseurl }}/index.html#projects">Mapping Projects</a>
 									<ul>
 										<!--<li><a href="{{ site.baseurl }}/blog">Blog</a></li>-->
-										<li><a href="{{ site.baseurl }}/meleke/">Meleke, Ethiopia</a></li>
+										<li><a href="{{ site.baseurl }}/mekelle/">Meleke, Ethiopia</a></li>
 										<li><a href="{{ site.baseurl }}/pokhara/">Pokhara, Nepal</a></li>
 										<!--<li>
 											<a href="">Phasellus consequat</a>
@@ -37,13 +38,13 @@
 									</ul>
 								</li>
 								<!--<li><a href="{{ site.baseurl }}/left-sidebar.html">Mapping Results</a></li>-->
-								<li><a href="http://www.aag.org/annualmeeting" target="_blank">AAG Conference Site</a></li>
+								<li ><a href="http://www.aag.org/annualmeeting" target="_blank">AAG Conference Site</a></li>
 								<li><a href="{{ site.baseurl }}/no-sidebar.html"><img src="{{ site.baseurl }}/assets/images/TwitterLogo.png" width="52" style="top:20px;position:relative"></a></li>
 							</ul>
 						</nav>
 
-						
-			<!-- original Nav 
+
+			<!-- original Nav
 				<nav id="nav">
 					<ul>
 						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>

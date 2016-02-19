@@ -82,7 +82,7 @@
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="{{ site.baseurl }}/index.html#summary-section" id="about-button">About</a></li>
+								<li><a href="{{ site.baseurl }}/summary.html" id="about-button">About</a></li>
 								<li>
 									<a href="{{ site.baseurl }}/schedule.html">Schedule</a>
 									<ul>
@@ -168,37 +168,7 @@
 							</footer>
 						</section>
 
-						{% include summary.html %}
 
-						<div id="container">
-						</div>
-
-						<script type="text/javascript">
-							$( document ).ready(function() {
-							    console.log( "ready!" );
-							});
-
-							$(window).load(function(){
-							    // Remove the # from the hash, as different browsers may or may not include it
-							    var hash = location.hash.replace('#','');
-
-							    if(hash == 'summary-section'){
-
-							       $("#summary-text").show('slow');
-
-							       }
-							   });
-
-							$("#summary-button").click(function () {
-								//$("#container").append($("#summary-text").html());
-								$("#summary-text").show('slow');
-							});
-
-							$("#about-button").click(function () {
-								//$("#container").append($("#summary-text").html());
-								$("#summary-text").show('slow');
-							});
-						</script>
 
 				</div>
 			</div>
