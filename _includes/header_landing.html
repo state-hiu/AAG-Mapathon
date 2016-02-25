@@ -22,6 +22,70 @@
   });
   </script>
   <style>
+
+  #header-wrapper {
+  	padding-top: 0px;
+  }
+  #nav {
+  	text-align: left;
+  	padding: 0 5em;
+  }
+  #nav > ul > li {
+  	font-style: inherit;
+  	font-weight: 500;
+  }
+  #nav > ul > li.current >a,
+  #nav > ul > li >a:hover {
+  	opacity: 1;
+  	background-color: rgba(0,0,0,0.7);
+  }
+   #nav > ul > li > a {
+  	color: #C7C7C7;
+  	font-weight: 600;
+  }
+  #banner {
+  	padding-top: 1em;
+  	min-height: 500px;
+  	margin-top: 0px;
+
+
+  }
+
+  #banner header {
+  	background: transparent;
+  	margin-top: 5em;
+  	text-align: left;
+  	margin-left: 20px;
+  	margin-right: 20px;
+  }
+  #banner h1,
+  #banner h2,
+  #banner h4,
+  #banner header p {
+  	color: white;
+  }
+
+  #banner h1 {
+  	font-size: 60px;
+  	margin-top: 30px;
+  	margin-bottom: 30px
+  }
+
+  #banner .button {
+  	margin-top: 30px;
+  }
+
+  #banner header p {
+  	font-size: 18px;
+  	width: 70%;
+  }
+  .quiet {
+  	opacity: 0.8;
+  }
+  #banner a {
+    color: white;
+  }
+
   .ui-tooltip, .arrow:after {
     background: rgba(34, 30, 31, 0.98);
     border: 2px solid #d73f3f;
@@ -30,7 +94,7 @@
     padding: 10px 20px;
     color: white;
     border-radius: 20px;
-    font: bold 14px Source Sans Pro", Sans-Serif;
+    font: bold 14px "Source Sans Pro", Sans-Serif;
     text-transform: uppercase;
     box-shadow: 0 0 7px black;
   }
@@ -74,12 +138,13 @@
 
   </style>
 
-
-					<!-- Logo -->
-						<h1><a href="index.html">The AAG Mapathon</a></h1>
-
 					<!-- Nav -->
-						<nav id="nav">
+
+
+					<!-- Banner -->
+						<section id="banner">
+
+						  <nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li><a href="{{ site.baseurl }}/summary.html" id="about-button">About</a></li>
@@ -111,20 +176,18 @@
 									</ul>
 								</li>
 								<!--<li><a href="{{ site.baseurl }}/left-sidebar.html">Mapping Results</a></li>-->
-								<li><a href="http://www.aag.org/annualmeeting" target="_blank">AAG Conference Site</a></li>
-                                <li><a href="{{ site.baseurl }}/bios.html" >Bios</a></li>
+                                <li><a href="{{ site.baseurl }}/bios.html" >Speakers</a></li>
 								<li>
-								<a href="http://twitter.com/home?status=This AAG Annual Meeting will provide a 1st for all—a 3 day Mapathon!+aagmapathon.org+%23AAGmapathon+@theAAG+@MapGive+@GGSDepartment"><img src="{{ site.baseurl }}/assets/images/TwitterLogo.png" width="52" style="top:20px;position:relative"></a>
+								<a href="http://twitter.com/home?status=This AAG Annual Meeting will provide a 1st for all—a 3 day Mapathon!+aagmapathon.org+%23AAGmapathon+@theAAG+@MapGive+@GGSDepartment"><img src="{{ site.baseurl }}/assets/images/TwitterLogo.png" width="32" style="top:15px;position:relative"></a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 								</li>
 							</ul>
 						</nav>
-
-					<!-- Banner -->
-						<section id="banner">
 							<header>
-								<h2>March 30<sup>th</sup>‒ April 1<sup>st</sup>, 2016, San Francisco, CA</h2>
-								<p>Organized by <a href="http://mapgive.state.gov/" target="_blank">MapGive</a>, <a href="https://cos.gmu.edu/ggs/" target="_blank">George Mason University</a>, and <a href="#" title="Colorado State, George Washington University, Mapzen, Mapbox, McGill University, Missing Maps, Stamen Design, Texas Tech University, University of Colorado, USAID GeoCenter, West Virginia University, World Bank, and Youth Mappers.">friends</a></p>
+								<p>March 30<sup>th</sup>‒ April 1<sup>st</sup>, 2016, San Francisco, CA</p>
+								<h1>AAG Mapthon</h1>
+								<p class="quiet">Join us for a three day Mapathon and contribute to OpenStreetMap for humanitarian efforts during the AAG conference. Organized by <a href="http://mapgive.state.gov/" target="_blank">MapGive</a>, <a href="https://cos.gmu.edu/ggs/" target="_blank">George Mason University</a>, and <a href="#" title="Colorado State, George Washington University, Mapzen, Mapbox, McGill University, Missing Maps, Stamen Design, Texas Tech University, University of Colorado, USAID GeoCenter, West Virginia University, World Bank, and Youth Mappers.">friends</a></p>
+								<a href="#projects" class="button">Get Started Mapping</a>
 							</header>
 						</section>
 
