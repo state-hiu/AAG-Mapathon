@@ -1,6 +1,6 @@
 ---
-title: Mozambique
-subtitle:
+title: Zambezia Province ‒ Mozambique
+subtitle: "Mapping to Improve Health and Prevent Infectious Diseases"
 featured: /assets/images/malaria-spraying.jpg
 permalink: '/mozambique/'
 layout: project
