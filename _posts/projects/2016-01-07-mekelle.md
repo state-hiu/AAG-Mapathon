@@ -18,4 +18,4 @@ layout: project
 
 <p>
 
-<h2><a href="http://esurv.org/online-survey.php?survey_ID=LCIILG_fb283cef" target="_blank">Participant Survey</a></h2>
+<h2><a href="http://esurv.org/online-survey.php?survey_ID=LCIILG_fb283cef" class="button alt big" id="summary-button" target="_blank">Participant Survey</a></h2>
